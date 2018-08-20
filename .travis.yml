@@ -1,0 +1,18 @@
+sudo: required
+
+language: python
+
+services:
+  - docker
+
+python:
+  - 3.6
+
+before_script:
+  - docker-compose -f docker-compose.travis.yml up --build -d
+  - docker ps -a
+
+script: ./scripts/runtests.sh
+
+after_script:
+  - docker-compose -f docker-compose.travis.yml down
