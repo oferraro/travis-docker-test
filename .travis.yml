@@ -1,6 +1,10 @@
 sudo: required
 
-language: python
+language: php
+
+php: 
+- 7.0
+
 
 services:
   - docker
