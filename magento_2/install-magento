@@ -9,6 +9,11 @@ chmod g+w $WORKDIR
 
 cd $WORKDIR
 
+echo "Just checking dirs"
+pwd 
+ls -ld
+ls -l 
+
 echo " ---------- Deleting everything in $WORKDIR ---------- " 
 rm -rf $WORKDIR/* rm -rf $WORKDIR/.*
 echo " ---------- Everything deleted in $WORKDIR ---------- " 
