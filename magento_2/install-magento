@@ -20,7 +20,8 @@ echo " ---------- Everything deleted in $WORKDIR ---------- "
 
 echo " ---------- Download magento from repo... ---------- " 
 echo "su www-data -c \"composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition $WORKDIR $MAGENTO_VERSION\""
-su www-data -c "composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition $WORKDIR $MAGENTO_VERSION"
+#su www-data -c "composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition $WORKDIR $MAGENTO_VERSION"
+composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition $WORKDIR $MAGENTO_VERSION
 echo " ---------- Magento downloaded ---------- " 
 
 echo " ---------- Installing getfinancing plugin ---------- "
