@@ -2,6 +2,8 @@
 
 source /var/www/get-env-vars /var/www/env
 
+mkdir -p /var/www/html/var/composer_home/ # Add dir just in case parents are no present
+
 ln -s /var/www/.composer/auth.json /var/www/html/var/composer_home/
 
 chown www-data /var/www/html/var/composer_home/ -R
